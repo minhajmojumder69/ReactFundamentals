@@ -1,0 +1,25 @@
+.profile-card{
+    background-color: aqua;
+    font-size: 25px;
+    width: 700px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: auto;
+    padding: 25px;
+}
+.shopping{
+    background-color: antiquewhite;
+    font-size: 25px;
+    width: 700px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 25px;
+    padding: 25px;
+}
+.items{
+    display: flex;
+    font-size: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
