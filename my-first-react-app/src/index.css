@@ -1,0 +1,29 @@
+.greetings-card {
+  border: 2px solid black;
+  border-radius: 3px;
+  background-color: aqua;
+  padding: 2px;
+}
+
+.demo{
+  border: 2px solid black;
+}
+
+.product-card{
+  border: 2px solid black;
+  border-radius: 3px;
+  background-color: rgb(128, 160, 234);
+  padding: 2px;
+}
+
+.moodTracker{
+  border: 2px solid black;
+  width: 700px;
+  height: 200px;
+  background-color: aqua;
+  margin: 80px;
+}
+
+.emoji-tracker{
+  margin: 80px;
+}

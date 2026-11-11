@@ -3,10 +3,12 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import Profile from './Components/Profile'
 import ShoppingList from './Components/ShoppingList'
+import User from './Components/User'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <User />
    <Profile />
    <ShoppingList />
   </StrictMode>,

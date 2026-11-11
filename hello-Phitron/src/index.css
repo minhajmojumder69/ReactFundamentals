@@ -23,3 +23,24 @@
     justify-content: space-around;
     align-items: center;
 }
+.user-card{
+    background-color: rgb(179, 233, 233);
+    font-size: 15px;
+    width: 700px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: auto;
+    padding: 25px;
+}
+.id-card{
+    display: grid;
+    grid-template-columns: repeat(2);
+
+}
+.child{
+    margin: auto;
+    width: 300px;
+    margin-top: 2px;
+    padding: 3px;
+    border: 2px solid black;
+}
