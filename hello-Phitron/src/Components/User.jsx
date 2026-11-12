@@ -4,11 +4,15 @@ import { useEffect, useState } from "react";
 const User = () => {
 
     const [users,setUsers] = useState([]);
+    const [isLoading, setIsloading] = useState(true)
 
     useEffect(()=>{
             fetch('https://jsonplaceholder.typicode.com/users')
             .then(res=> res.json())
-            .then(data=> setUsers(data))
+            .then(data=>{ 
+                setUsers(data)
+                setIsloading(false)
+            })
     }, [])
 
     console.log(users)
@@ -16,7 +20,7 @@ const User = () => {
     return (
         <div className='user-card'>
             <h2>User:</h2>
-            <div  className="id-card">
+            {isLoading ? <h2>Loading..</h2> : <div  className="id-card">
                 {users.map((user)=> {
                     return (<div className="child">
                         <h2>Name: {user.name}</h2>
@@ -25,7 +29,7 @@ const User = () => {
                     </div>
                     );
                 })}
-            </div>
+            </div>}
         </div>
     );
 };
