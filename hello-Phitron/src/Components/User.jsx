@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 
 const User = () => {
@@ -15,11 +15,16 @@ const User = () => {
             })
     }, [])
 
-    console.log(users)
-
+    // console.log(users)
+    const renderCount = useRef(0);
+    useEffect(()=>{
+        renderCount.current = renderCount.current +1 ;
+    },[])
+    // console.log(renderCount.current,"render count")
     return (
         <div className='user-card'>
             <h2>User:</h2>
+            {/* <h4>Render Count: {renderCount}</h4> */}
             {isLoading ? <h2>Loading..</h2> : <div  className="id-card">
                 {users.map((user)=> {
                     return (<div className="child">
