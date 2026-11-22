@@ -4,6 +4,7 @@ import { AuthContext } from "../context/AuthProvider";
 const Login = () => {
     const [username,setUsername] = useState('')
     const [password,setPassword] = useState('')
+    // eslint-disable-next-line no-unused-vars
     const {authUser,login} = useContext(AuthContext)
 
     const handleLogin = (e)=>{
